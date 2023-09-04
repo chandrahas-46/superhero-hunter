@@ -57,9 +57,9 @@ function createDivContainer(ele) {
 	div.classList.add("character-card");
 	div.setAttribute("id", id);
 
-	let characterdetailsPagePath = `../pages/characterdetails.html`;
+	let characterdetailsPagePath = `../pages/characterdetails.html#${id}`;
 	div.innerHTML = `
-		<img class="poster" src="${path}.jpg" alt="">
+		<a href=${characterdetailsPagePath}><img class="poster" src="${path}.jpg"></a>
 		<div class = "card-body">
 			<a href="${characterdetailsPagePath}">${name}</a>
 			<input type="button" value="UnFavorite" id=${id} data-character='{"id": "${id}", "name": "${name}", "path": "${path}"}' onclick="updateFavorite(this)"/>
