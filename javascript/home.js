@@ -25,7 +25,7 @@ function createCommonDivContainer(ele,favorite) {
 	div.classList.add("character-card");
 	div.setAttribute("id", id);
 	// character details page link
-	let characterdetailsPagePath = `../3%20SuperHero/pages/characterdetails.html#${id}`;
+	let characterdetailsPagePath = `../superhero-hunter/pages/characterdetails.html#${id}`;
 
 	div.innerHTML = `
 		<a href=${characterdetailsPagePath}><img class="poster" src="${thumbnail.path}.jpg"></a>
