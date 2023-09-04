@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Superhero hunter</title>
+
+		<link rel="stylesheet" type="text/css" href="superHeroStyles.css" />
+		<script src="https://kit.fontawesome.com/dafed025db.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<!-- ####################### navbar ########################## -->
+		<nav class="grid">
+			<div class="nav-logo">
+				<img src="Marvel_Logo.png">
+			</div>
+			<hr style="width: 95%;">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="./pages/favorite.html">My-Favorite-Superhero</a></li>
+			</ul>
+		</nav>
+
+		<!-- ####################### search character ############################ -->
+		<section >
+			<div class="search-section">
+				<input type="text" placeholder="superhero..." id="searchBox"/>
+				<i class="fas fa-search"></i>
+		    	<input type="button" value="Search" id="searchBtn"/>
+			</div>
+	    </section>
+
+	    <!-- ####################### search Result ############################ -->
+	    <section>
+	    	<!-- <h2>Search Result :</h2> -->
+	      	<div id="searchResult">
+	      		<h3>Search Result : </h3>
+	      		<span>&nbsp;&nbsp;&nbsp;&nbsp; Will shown when you click on <b>search</b> button</span>
+	      	</div>
+	    </section>
+
+	    <!-- ####################### Marvel Characters ############################ -->
+	    <section>
+			<h2 style="text-align: center;">Marvel Characters</h2>
+			<ul>
+				<li>Click on character <b>Image/Name</b> to see character details </li>
+				<li>Click on <b>Favorite/Unfavorite</b> button to add/remove to My-Favorite-Superhero</li>
+				<li>Click on <b>My-Favorite-Superhero</b> button to see all favorite characters</li>
+			</ul>
+			<div class="caracters" id="characters-container">
+				<h2>.........</h2>
+			</div>
+		</section>
+
+		<!--######################## javascript files ######################### -->
+		<script type="text/javascript" src="javascript/api-data.js"></script>
+		<script type="text/javascript" src="javascript/home.js"></script>
+		<script type="text/javascript" src="javascript/addFavorite.js"></script>
+	</body>
+</html>
